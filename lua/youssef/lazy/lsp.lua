@@ -63,7 +63,7 @@ return {
                     local lspconfig = require("lspconfig")
                     lspconfig.clangd.setup ({
                         name = 'clangd',
-                        cmd = {'clangd', '--background-index', '--clang-tidy', '--log=verbose'},
+                        cmd = {'clangd', '--background-index','-query-driver=/home/youssef/Embedded/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi*', '--clang-tidy', '--log=verbose'},
                         initialization_options = {
                             fallback_flags = {'-std=c++2a'},
                         },
